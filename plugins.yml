@@ -1,0 +1,129 @@
+name: LbCore
+main: LbCore\LbCore
+version: 1.0.0
+api: [3.0.1]
+load:
+author: williamtdr
+authors: [williamtdr]
+description: Provides a mini-game modification platform for the Lifeboat server system.
+website: https://williamtdr.com
+commands:
+ warn:
+  description: "Send warning to spammer"
+  usage: "/warn <player_name>"
+  permission: lbcore.command
+ block:
+  description: "Block a player's messages"
+  usage: "/block <player name>"
+  permission: lbcore.command
+ mute:
+  description: "Mute player chat messages."
+  usage: "/mute"
+  permission: lbcore.command
+ unmute:
+  description: "Unmute player chat messages."
+  usage: "/unmute"
+  permission: lbcore.command
+ getpos:
+  description: "Lists player position."
+  usage: "/getpos"
+  permission: lbcore.command
+ register:
+  description: "Register your username."
+  usage: "/register <password>"
+  permission: lbcore.command
+ login:
+  description: "Helps those used to SimpleAuth login."
+  usage: "/login <password>"
+  permission: lbcore.command
+ coins:
+  description: "Check player coin balance."
+  usage: "/coins <username>"
+  permission: lbcore.command
+ pay:
+  description: "Pay a player."
+  usage: "/pay <username> <amount>"
+  permission: lbcore.command
+ changepw:
+  description: "Change password."
+  usage: "/changepw"
+  permission: lbcore.command
+ vip:
+  description: "Enable/disable VIP advantages."
+  usage: "/vip"
+  permission: lbcore.command
+ stats:
+  description: "/stats <username>"
+  usage: "/stats"
+  permission: lbcore.command
+ lang:
+  description: "Change your locale."
+  usage: "/lang <en|es>"
+  permission: lbcore.command
+ friend:
+  description: "Manage your friend list."
+  usage: "/friend <list|player name|remove>"
+  permission: lbcore.command
+ ignore:
+  description: "Ignore a player's messages"
+  usage: "/ignore <player>"
+  permission: lbcore.command
+ unignore:
+  description: "Unignore a player's messages"
+  usage: "/unignore <player>"
+  permission: lbcore.command
+  aliases: ["unblock"]
+ reply:
+  description: "Answer to a player who sent you last private message"
+  usage: "/reply <message>"
+  permission: lbcore.command
+ tag:
+  description: "Show/hide user tag"
+  usage: "/tag"
+  permission: lbcore.command
+ tell:
+  description: "Sends a private message to the given player"
+  usage: "/tell <player> <message>"
+  permission: lbcore.command
+  aliases: ["w","msg"]
+ server:
+  description: "Show server domain"
+  usage: "/server"
+  permission: lbcore.command
+ kits:
+  description: "Show available kits info, change kit"
+  usage: "/kits <list|info|name>"
+  permission: lbcore.command
+ shield:
+  description: "Makes player invulnerable"
+  usage: "/shield"
+  permission: lbcore.command
+ invisible:
+  description: "Makes player invisible"
+  usage: "/invisible"
+  permission: lbcore.command
+ lbgive:
+  description: "Gives player an item"
+  usage: "/lbgive <item name|item id>"
+  permission: lbcore.command
+ hacker:
+  description: "Report hacker player"
+  usage: "/hacker <player_name> <reason>"
+  permission: lbcore.command
+ move:
+  description: "Teleport moderator to point"
+  usage: "/move <x> <y> <z>"
+  permission: lbcore.command
+ fly:
+  description: "Allow flying"
+  usage: "/fly"
+  permission: lbcore.command
+
+permissions:
+ lbcore:
+  default: op
+  description: "No commands need to be filtered here, they're all ok to be used by users."
+  children:
+   lbcore.command:
+    description: "Allows using commands."
+    default: true
