@@ -1,0 +1,2 @@
+# LbCore
+Lifeboat Core.
