@@ -1,0 +1,11 @@
+[
+    ["You can turn off chat and these helpful messages with /mute", "(You will not hurt our feelings.)"],
+    ["/lang changes language.","en = English, es = Spanish, de = German"],
+    ["/tell send a private message to the given player."],
+    ["You can get your coordinates using /getpos"],
+    ["To return to the lobby at any time, use /hub"],
+    ["$CENSUS"],
+    ["$RANDOM"],
+    ["$RANDOM"],
+    ["$RANDOM"]
+]
